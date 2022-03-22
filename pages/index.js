@@ -3,7 +3,7 @@ import { sanityClient } from '../sanity';
 const Home = ({properties}) => {
   return (
    <>
-   {console.log(properties)}
+   <h1>Home</h1>
    </>
   )
 }
