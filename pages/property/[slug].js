@@ -1,9 +1,24 @@
 import {sanityClient} from '../../sanity';
 
-const Property = ({title}) => {
+const Property = ({
+  title,
+  location,
+  propertyType,
+  mainImage,
+  images,
+  pricePerNight,
+  bedrooms,
+  description,
+  host,
+  reviews,
+}) => {
   return (
     <>
       <h1>{title}</h1>
+      <p>{propertyType}</p>
+      <p>{pricePerNight}</p>
+      <p>{bedrooms}</p>
+      <p>{description}</p>
     </>
   )
 }
