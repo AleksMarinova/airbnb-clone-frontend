@@ -1,10 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
-
-
 const Map=({location})=> {
-  console.log(location.lng)
+  
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLEMAPS_KEY
