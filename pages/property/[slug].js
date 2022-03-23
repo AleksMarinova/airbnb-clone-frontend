@@ -1,5 +1,6 @@
 import { sanityClient } from "../../sanity";
 import {pluralize} from '../../utils';
+import Img from '../../components/Image'
 
 const Property = ({
   title,
@@ -18,6 +19,17 @@ const Property = ({
     <div className="container">
       <h1><b>{title}</b></h1>
       <p>{reviewAmount} review{pluralize(reviewAmount)} </p>
+    <div className="images-section">
+      <Img indentifyer='main-image' image={mainImage} />
+    </div>
+     <div className="sub-images-section"> 
+     {images.map((image, index) => {
+        return (
+          <Img key={index} image={image} />
+        )
+     })}
+     </div>
+
       <h2><b>{propertyType} hosted by {host?.name}</b></h2>
       <h4>{bedrooms} bedroom{pluralize(bedrooms)}</h4>
       <hr/>
