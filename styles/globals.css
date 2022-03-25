@@ -69,3 +69,29 @@ justify-content:space-between;
 .main-image img {
   width: 100%;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.feed-container{
+  width: 50%;
+  height: 100vh;
+  background: color #f8f8f8;
+  padding:20px;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map {
+  width:50%;
+}
+
+.card {
+  padding: 20px;
+
+}

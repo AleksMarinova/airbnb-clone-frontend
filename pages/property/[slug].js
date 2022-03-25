@@ -3,6 +3,7 @@ import { pluralize } from "../../utils";
 import Img from "../../components/Image";
 import Review from "../../components/Review";
 import Map from "../../components/Map";
+import Link from 'next/link';
 
 const Property = ({
   title,
@@ -66,9 +67,7 @@ const Property = ({
             <h4>
               {reviewAmount} review{pluralize(reviewAmount)}
             </h4>
-            <div className="button" onClick={() => {}}>
-              Change dates
-            </div>
+            
           </div>
       </div>
       <hr/>
@@ -77,6 +76,11 @@ const Property = ({
       <h2>{reviewAmount} review {pluralize(reviewAmount)}</h2>
       {reviewAmount > 0 && 
       reviews.map((review, index) => <Review key={index} review={review} />)}
+      <Link href="/"  passHref> 
+            <button className="back-button" >
+              Change dates
+            </button>
+            </Link>
       <h2>Location</h2>
       <Map location={location} />
     </div>
