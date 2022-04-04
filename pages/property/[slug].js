@@ -68,6 +68,11 @@ const Property = ({
             <h4>
               {reviewAmount} review{pluralize(reviewAmount)}
             </h4>
+            <Link href="/"  passHref> 
+            <button className="back-button" >
+              Change dates
+            </button>
+            </Link>
             
           </div>
       </div>
@@ -77,11 +82,7 @@ const Property = ({
       <h2>{reviewAmount} review {pluralize(reviewAmount)}</h2>
       {reviewAmount > 0 && 
       reviews.map((review, index) => <Review key={index} review={review} />)}
-      <Link href="/"  passHref> 
-            <button className="back-button" >
-              Change dates
-            </button>
-            </Link>
+     
       <h2>Location</h2>
       <Map location={location} />
     </div>

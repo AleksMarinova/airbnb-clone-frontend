@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { urlFor } from "../sanity";
 import { pluralize } from "../utils";
+import DashboardMap from "../components/DashboardMap";
 
 const Home = ({ properties }) => {
   return (
@@ -37,8 +38,11 @@ const Home = ({ properties }) => {
                 </Link>
               ))}
             </div>
-            <div className="map"></div>
+            
           </div>
+          <div className="map">
+              <DashboardMap properties={properties} />
+            </div>
         </div>
       )}
     </>
