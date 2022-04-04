@@ -17,9 +17,7 @@ const Map=({location})=> {
     lat: location.lat,
     lng: location.lng
   };
-  const [map, setMap] = React.useState(null)
-
-  
+  const [map, setMap] = React.useState(null)  
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds();

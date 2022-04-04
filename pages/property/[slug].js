@@ -18,6 +18,7 @@ const Property = ({
   reviews,
 }) => {
   const reviewAmount = reviews.length;
+ 
   return (
     <div className="container">
       <h1>

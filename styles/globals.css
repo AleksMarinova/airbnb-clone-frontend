@@ -78,7 +78,7 @@ justify-content:space-between;
 .feed-container{
   width: 50%;
   height: 100vh;
-  background: color #f8f8f8;
+  background-color: #f8f8f8;
   padding:20px;
 }
 
@@ -93,5 +93,26 @@ justify-content:space-between;
 
 .card {
   padding: 20px;
+
+}
+
+.card img {
+  max-width: 100px;
+  border-radius: 20px;
+}
+
+.nav {
+  position: sticky;
+  z-index: 100;
+  box-shadow: rgb(0 0 0 / 12%) 0 6px 16px;
+  padding: 10px;
+}
+
+.logo {
+background-image: url('https://www.lifepng.com/wp-content/uploads/2020/11/Airbnb-Logo-png-hd.png');
+background-size: cover;
+background-position: center;
+width: 100px;
+height: 100px;
 
 }
